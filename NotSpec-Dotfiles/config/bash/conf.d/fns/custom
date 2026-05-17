@@ -1,0 +1,44 @@
+#--------------------------------------------
+##  ____ _   _ ____ _____ ___  __  __
+#  / ___| | | / ___|_   _/ _ \|  \/  |
+# | |   | | | \___ \ | || | | | |\/| |
+# | |___| |_| |___) || || |_| | |  | |
+#  \____|\___/|____/ |_| \___/|_|  |_|
+#--------------------------------------------
+
+
+
+
+
+
+minecraft-server() {
+    if [[ "$1" == "open" ]]; then
+        (cd ~/.Servers/My-Server && /usr/lib/jvm/java-21-openjdk/bin/java -Xmx4G -Xms4G -jar /home/n0tspec/.Servers/My-Server/paper-1.21.8-60.jar nogui)
+        return
+    fi
+
+    if [[ "$1" == "--help" ]]; then
+        (cd ~/.Servers/My-Server && cat "Command Help.txt")
+        return
+    fi
+
+    echo "minecraft-server: wrong argument: $1, type minecraft-server --help for help"
+}
+whoami() {
+    echo "NotSpec"
+}
+
+
+ds4() {
+    if [[ "$1" == "cnct" ]]; then
+      ds4drv & disown
+      return
+    fi
+
+    if [[ "$1" == "dscnct" ]]; then
+      pkill ds4drv
+      return
+    fi
+
+    echo "ds4: wrong argument: $1, type ds4 --help for help"
+}

@@ -1,0 +1,8 @@
+source ~/.local/share/NotSpecOS/default/bash/envs
+source ~/.local/share/NotSpecOS/default/bash/shell
+source ~/.local/share/NotSpecOS/default/bash/aliases
+source ~/.local/share/NotSpecOS/default/bash/functions
+source ~/.local/share/NotSpecOS/default/bash/init
+source ~/.local/share/NotSpecOS/default/bash/completions
+[[ $- == *i* ]] && bind -f ~/.local/share/NotSpecOS/default/bash/inputrc
+fastfetch
