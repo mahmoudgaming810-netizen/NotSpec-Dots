@@ -1,1 +1,0 @@
-for f in $NOTSPEC_PATH/default/bash/fns/*; do source "$f"; done
