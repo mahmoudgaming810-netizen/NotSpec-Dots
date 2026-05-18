@@ -1,0 +1,11 @@
+hyprland
+wofi
+waybar
+fastfetch
+nvim
+kitty
+wiremix
+swww
+mako
+ncmpcpp
+mpd
